@@ -16,6 +16,7 @@ export default function ClientLayout({ children }) {
   return (
     <html lang="pt-BR">
       <head>
+        <link rel="icon" href="/favicon.ico" />
         <Schema />
       </head>
       <body className={`${inter.className} bg-cream min-h-screen flex flex-col`}>

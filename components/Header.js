@@ -146,7 +146,7 @@ export default function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden glassmorphism border-t"
+            className="md:hidden glassmorphism "
           >
             <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
               {navLinks.map((link) => (

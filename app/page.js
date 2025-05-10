@@ -62,12 +62,12 @@ export default function Home() {
             <Link href="/doe" className="btn-primary text-lg px-8 py-3">
               Quero Ajudar
             </Link>
-            <Link
+            {/* <Link
               href="/adote"
               className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-bold py-3 px-8 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1"
             >
               Adotar um Pet
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
       </section>
@@ -143,7 +143,7 @@ export default function Home() {
               <p className="mb-6">
                 Além de ajudar os animais, você também contribui para um consumo mais consciente e sustentável!
               </p>
-              <Link href="/loja" className="btn-secondary inline-block">
+              <Link href="/contato" className="btn-secondary inline-block">
                 Visite nosso Brechó
               </Link>
             </motion.div>

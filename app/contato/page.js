@@ -42,6 +42,19 @@ export default function Contato() {
         mensagem: "",
       })
     }, 1000)
+    console.log(formData)
+
+
+    let mensagem = `*Nova Mensagem - Kabanamayte*\n\n`
+    mensagem += `*Nome:* ${formData.nome}\n`
+    mensagem += `*Email:* ${formData.email}\n`
+    mensagem += `*Mensagem:* ${formData.mensagem}\n\n`
+
+    // Codificar a mensagem para URL
+    const mensagemCodificada = encodeURIComponent(mensagem)
+
+    // Abrir WhatsApp em nova aba
+    window.open(`https://wa.me/5548988116036?text=${mensagemCodificada}`, "_blank")
   }
 
   return (
@@ -157,17 +170,17 @@ export default function Contato() {
                       Instagram
                     </Link>
 
-                    <Link
+                    {/* <Link
                       href="#"
                       className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all"
                     >
                       <Facebook size={20} />
                       Facebook
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
 
-                <div>
+                {/* <div>
                   <h3 className="text-xl font-semibold mb-3">WhatsApp</h3>
                   <Link
                     href="https://wa.me/5548988116036"
@@ -178,13 +191,13 @@ export default function Contato() {
                     <MessageSquare size={20} />
                     Iniciar Conversa
                   </Link>
-                </div>
+                </div> */}
 
                 <div>
                   <h3 className="text-xl font-semibold mb-3">Localização</h3>
                   <div className="rounded-lg overflow-hidden shadow-md h-64 bg-gray-200">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975886075113!2d-46.6522202!3d-23.5646162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUyLjUiUyA0NsKwMzknMDguMCJX!5e0!3m2!1spt-BR!2sbr!4v1620160000000!5m2!1spt-BR!2sbr"
+                      src="https://maps.google.com/maps?q=guarda+do+embau&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}

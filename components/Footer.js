@@ -33,20 +33,20 @@ export default function Footer() {
               >
                 <Instagram size={20} />
               </Link>
-              <Link
+              {/* <Link
                 href="#"
                 aria-label="Facebook da Kabanamayte"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white hover:from-blue-600 hover:to-blue-700 transition-all"
               >
                 <Facebook size={20} />
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="#"
                 aria-label="Twitter da Kabanamayte"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-sky-400 to-sky-500 flex items-center justify-center text-white hover:from-sky-500 hover:to-sky-600 transition-all"
               >
                 <Twitter size={20} />
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -65,24 +65,24 @@ export default function Footer() {
                   Sobre Nós
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/adote" className="text-gray-600 hover:text-orange-500 text-sm flex items-center">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mr-2"></span>
                   Adote um Pet
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/doe" className="text-gray-600 hover:text-orange-500 text-sm flex items-center">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mr-2"></span>
                   Faça uma Doação
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/loja" className="text-gray-600 hover:text-orange-500 text-sm flex items-center">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mr-2"></span>
                   Loja Solidária
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contato" className="text-gray-600 hover:text-orange-500 text-sm flex items-center">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mr-2"></span>
@@ -92,7 +92,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="md:col-span-1">
+          {/* <div className="md:col-span-1">
             <h3 className="font-bold text-lg mb-4 text-gradient">Informações</h3>
             <ul className="space-y-2">
               <li>
@@ -120,7 +120,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="md:col-span-1">
             <h3 className="font-bold text-lg mb-4 text-gradient">Contato</h3>
@@ -152,6 +152,11 @@ export default function Footer() {
         <div className="border-t border-gray-200 mt-8 pt-6 text-center">
           <p className="text-sm text-gray-600">
             &copy; {new Date().getFullYear()} Kabanamayte. Todos os direitos reservados.
+          </p>
+          <p className="text-sm text-gray-600">
+            <Link href="https://www.webrushbrasil.com.br/" target="_blank" className="text-orange-500 hover:text-orange-600 transition-colors">
+              Site desenvolvido com ♥ por WebRush Brasil 
+            </Link>
           </p>
         </div>
       </div>
