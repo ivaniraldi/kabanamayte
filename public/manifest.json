@@ -1,0 +1,23 @@
+{
+  "name": "Kabanamayte - ONG de Resgate Animal",
+  "short_name": "Kabanamayte",
+  "description": "ONG dedicada ao resgate e cuidado de animais em situação de rua",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8E7",
+  "theme_color": "#FFA07A",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
